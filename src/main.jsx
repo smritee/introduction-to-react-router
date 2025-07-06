@@ -11,6 +11,7 @@ import About from './component/About/About.jsx'
 import Contact from './component/Contact/Contact.jsx'
 import Users from './component/Users/Users.jsx'
 import UserDetails from './component/UserDetails/UserDetails.jsx'
+import ErrorPage from './component/ErrorPage/ErrorPage.jsx'
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     //Nesting Route
     path: "/",
     element: <Home></Home>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
         {
           path:"/about",
